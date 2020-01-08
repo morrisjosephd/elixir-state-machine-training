@@ -1,8 +1,5 @@
 defmodule CounterTest do
-  use ExUnit.Case
-  doctest Counter
+  use ExUnit.Case  # macros for tests
+  doctest Counter # run any tests embedded in the documentation for this module
 
-  test "greets the world" do
-    assert Counter.hello() == :world
-  end
 end
