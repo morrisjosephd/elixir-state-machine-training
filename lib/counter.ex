@@ -3,7 +3,7 @@ defmodule Counter do
     GenServer.call(Counter.Worker, :read)
   end
 
-  def increment do
-    GenServer.cast(GenServer.Worker, :inc)
+  def inc do
+    GenServer.cast(Counter.Worker, :inc)
   end
 end
